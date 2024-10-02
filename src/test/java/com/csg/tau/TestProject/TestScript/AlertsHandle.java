@@ -21,6 +21,7 @@ public class AlertsHandle {
 		Alert al=driver.switchTo().alert();
 		al.sendKeys("test text");
 		al.accept();
+		driver.get("http://demo.automationtesting.in/Alerts.html");
 		
 		WebElement searchBox=driver.findElement(By.name("field-keywords"));
 		searchBox.sendKeys("hairdryer");
